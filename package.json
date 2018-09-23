@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
-    "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "build--prod": "cross-env NODE_ENV=production webpack",
     "watch": "npm run dev -- --watch",
     "server": "./node_modules/.bin/webpack-dev-server --inline --open"
   },
