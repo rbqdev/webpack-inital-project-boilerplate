@@ -1,0 +1,45 @@
+{
+  "name": "webpack-inital-project-boilerplate",
+  "version": "1.0.0",
+  "description": "Studies and initial setup for a webpack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack --config webpack.config.js",
+    "watch": "npm run dev -- --watch",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbqdev/webpack-inital-project-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Robson Braga de Queiroz <rbq.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbqdev/webpack-inital-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/rbqdev/webpack-inital-project-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.2",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "chai": "^4.1.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
