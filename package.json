@@ -4,6 +4,7 @@
   "description": "Studies and initial setup for a webpack project",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
     "build": "webpack --config webpack.config.js",
     "build--prod": "cross-env NODE_ENV=production webpack",
@@ -30,6 +31,9 @@
     "chai": "^4.1.2",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "file-loader": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.2",
     "mocha": "^5.2.0",
